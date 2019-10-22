@@ -103,9 +103,15 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
+      onPressed: () async {
+    await CustomAlertBox.showCustomAlertBox(
+        context: context,
+        willDisplayWidget: Container(
+          child: Text('My custom alert box, used from example!!'),
+        ));
+  },
+  tooltip: 'Show Custom Alert Box',
+  child: Icon(Icons.message),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
