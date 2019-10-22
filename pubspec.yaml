@@ -1,8 +1,8 @@
 name: custom_alert_box
-description: A new Flutter package.
+description: Show custom Alert box
 version: 0.0.1
-author:
-homepage:
+author: Abhishek Patil
+homepage: https://github.com/Abhishek0706/custom_alert_box.git
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
